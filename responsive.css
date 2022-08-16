@@ -1,0 +1,675 @@
+ 
+
+ @media (max-width:370px){
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .entete{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px 10px 30px auto;
+        
+    }
+    .entete .logo-aeeni{
+        width: 200px;
+        height:120px;
+        padding:1em 1em 1em 1em;
+        justify-content: center;
+    }
+    .entete .logo-eni{
+        display: none;
+    }
+    .entete .logo-aeeni img{ 
+        width: 280px;
+        height: 120px;
+        font-weight: bold;
+    }
+    .entete .logo-eni img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .entete .signification{
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        font-family: 'Verdana';
+        color:var(--theme-color);
+        align-items: center;
+        position: relative;
+        margin-top: 1em;
+        margin-bottom: 0.1em;
+    }
+    .entete .signification span{
+        color: rgb(209, 206, 206);
+    }
+/*==============    navigation bar      ====================*/
+    .navigation-bar{
+        width: 100%;
+        height: 3em;
+        background-color:var(--themebase-color);
+        position: -webkit-sticky; /* Safari */
+         position: sticky;
+        z-index: 2;
+        top: 0;
+    }
+    .navigation-bar .navigation-liste{
+        display: none;
+    }
+
+    .navigation-bar .icon-align-justify{
+        display: block;
+        color: white;
+        margin: 5em 1em 2em 1em;
+        cursor: pointer;
+    }
+
+    /*===============================================================    
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .slideshow-container .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .slideshow-container .prev,.slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .slideshow-container .prev{
+    right: 1px;
+  
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .slideshow-container .prev:hover,.slideshow-container  .next:hover {
+   
+  }
+  
+  /* Caption text */
+  .slideshow-container .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .slideshow-container.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .slideshow-container div .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,.slideshow-container .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .slideshow-container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .containeur-slide  .plus-d_information{
+    width: 100%;
+    height: 100px;
+    display: none;
+    padding: 1em 1em 1em 1em;
+    margin-bottom:5em;
+
+}
+.containeur-slide .plus-d_information p{
+    color: rgb(119, 116, 116);
+    align-items: center;
+    justify-content: center;
+}
+  /*==========================================================================
+  =========================================================================*/
+
+  /*====================      section2        ==================================*/
+
+.section{
+    width: 100%;
+    height: auto;
+    padding: 2em 1em 1em 1em ;
+}
+.section .club-organisme-membre{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.section .club-organisme-membre .containeur-club{
+    width: 100%;
+    
+}
+.section .club-organisme-membre .containeur-club .titre{
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid var(--themebase-color);
+}
+.section .club-organisme-membre .containeur-club .liste-clubs{
+    width: 100%;
+    height: auto;
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    padding: 5px 5px;
+    border: 1px solid rgb(209, 206, 206);
+    box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club img{
+    width: 30%;
+    height: 100%;
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club .legende{
+    padding: 1em 1em;
+}
+
+
+
+
+.section-membre .containeur-membre{
+    width: 100%;
+    padding:1em 1em 1em 1em;
+    background: white;
+    
+}
+
+.section-membre .containeur-membre .titre{
+    width: 100%;
+    height: 3em;
+    color: white;
+    border-top-right-radius: 4em;
+    background-color: var(--themebase-color);
+    padding: 1em 1em 1em 1em;
+}
+  .section-membre .containeur-membre .titre h2{
+      font-size: 1em;
+  }
+
+  .section-membre .containeur-membre .liste-membre .box{
+    width: 200px;
+    margin: 20px;
+    background: rgba(211, 209, 209, 0.2);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 50px;
+}
+  .section-membre .containeur-membre .liste-membre.box .text h3{
+    color: #fd911f;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/*========================  partenaires     ===========================*/
+
+.containeur-partenaire{
+    width: 100%;
+    padding: 2em 2em 2em 1em;
+}
+.containeur-partenaire .titre{
+    
+}
+.containeur-partenaire .titre h2{
+    width: 100%;
+    height: 30px;
+    color: white;
+    border-top-right-radius: 3em;
+    background-color:var(--themebase-color);
+    padding: 1em 1em 1em 1em;
+}
+
+
+.containeur-partenaire .partenaires{
+    display: block;
+    flex-wrap: wrap;
+    padding: 1em 1em 1em 1em;
+    border-top: 2px solid var(--themebase-color);
+
+}
+.containeur-partenaire .partenaires .contenue{
+    width: 60%;
+    height: 5em;
+    margin: 2em 2em 4em 4em;
+}
+.containeur-partenaire .partenaires .contenue img{
+    width: 100%;
+    height: 100%;
+}
+.containeur-partenaire .partenaires .contenue p{
+    text-align: center;
+    color: rgb(107, 105, 105);
+    font-size: 1.2em;
+}
+
+/*===================   footer      ====================*/
+
+.pied{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1em 1em 3em;
+    background-color: var(--themebase-color);
+}
+.pied .liens{
+
+}
+.pied .liens .liste{
+    list-style: none;
+    color: white;
+}
+
+.pied .liens .liste li {
+    margin: 10px 5px;
+}
+
+     
+ }
+
+
+ @media (min-width:370px )and (max-width:800px) {
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .entete{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .entete .logo-aeeni{
+        width: 100px;
+        height:100px;
+        padding:1em 1em 1em 1em;
+        justify-content: center;
+    }
+    .entete .logo-eni{
+        display: block;
+        width: 100px;
+        height:100px;
+        padding:1em 1em 1em 1em;
+        margin-right: 2em;
+        justify-content: center;
+    }
+    .entete .logo-aeeni img{ 
+        width: 120px;
+        height: 120px;
+        font-weight: bold;
+    }
+    .entete .logo-eni img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .entete .signification{
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        align-items: center;
+        position: relative;
+        margin-top: 3em;
+        margin-bottom: 0.1em;
+    }
+    .entete .signification span{
+        color: rgb(209, 206, 206);
+    }
+/*==============    navigation bar      ====================*/
+    .navigation-bar{
+        width: 100%;
+        height: 5em;
+        background-color:var(--themebase-color);
+        position: -webkit-sticky; /* Safari */
+         position: sticky;
+        z-index: 2;
+        top: 0;
+    }
+    .navigation-bar .navigation-liste{
+        display: none;
+    }
+
+    .navigation-bar .icon-align-justify{
+        display: block;
+        color: white;
+        margin: 5em 1em 2em 1em;
+        cursor: pointer;
+    }
+
+    /*===============================================================    
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .slideshow-container .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .slideshow-container .prev,.slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .slideshow-container .next {
+    left: 125px;
+    border-radius: 3px 0 0 3px;
+  }
+  .slideshow-container .prev{
+    right: 1px;
+  
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .slideshow-container .prev:hover,.slideshow-container  .next:hover {
+    
+  }
+  
+  /* Caption text */
+  .slideshow-container .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .slideshow-container.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .slideshow-container div .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,.slideshow-container .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .slideshow-container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /*==========================================================================
+  =========================================================================*/
+
+  /*====================      section2        ==================================*/
+
+.section{
+    width: 100%;
+    height: auto;
+    padding: 2em 1em 1em 1em ;
+}
+.section .club-organisme-membre{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.section .club-organisme-membre .containeur-club{
+    width: 100%;
+    
+}
+.section .club-organisme-membre .containeur-club .titre{
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid var(--themebase-color);
+}
+.section .club-organisme-membre .containeur-club .liste-clubs{
+    width: 100%;
+    height: auto;
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club{
+    width: 100%;
+    height: 8em;
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    padding: 5px 5px;
+    border: 1px solid rgb(209, 206, 206);
+    box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club img{
+    width: 30%;
+    height: 100%;
+}
+.section .club-organisme-membre .containeur-club .liste-clubs .club .legende{
+    padding: 1em 1em;
+}
+
+.section .club-organisme-membre .containeur-organisme{
+    width: 100%;
+    height:auto;
+}
+.section .club-organisme-membre .containeur-organisme .titre{
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid var(--themebase-color);
+}
+.section .club-organisme-membre .containeur-organisme .liste-organisme{
+    width: 100%;
+    height: auto;
+}
+.section .club-organisme-membre .containeur-organisme .liste-organisme .organisme{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    padding: 5px 5px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
+}
+.section .club-organisme-membre .containeur-organisme .liste-organisme .organisme img{
+    width: 30%;
+    height: 100%;
+}
+.section .club-organisme-membre .containeur-organisme .liste-organisme .organisme .legende{
+    padding: 20px 20px;
+}
+
+
+.section .club-organisme-membre .containeur-organisme{
+    width: 30%;
+    height:auto;
+    margin-left: 50px;
+}
+
+
+.section-membre .containeur-membre{
+    width: 100%;
+    padding:1em 1em 1em 1em;
+    background: white;
+    
+}
+
+.section-membre .containeur-membre .titre{
+    width: 100%;
+    height: 3em;
+    color: white;
+    border-top-right-radius: 4em;
+    background-color: var(--themebase-color);
+    padding: 1em 1em 1em 1em;
+}
+  .section-membre .containeur-membre .titre h2{
+      font-size: 1em;
+  }
+
+  .section-membre .containeur-membre .liste-membre .box{
+    width: 200px;
+    margin: 20px;
+    background: rgba(211, 209, 209, 0.2);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 50px;
+}
+  .section-membre .containeur-membre .liste-membre.box .text h3{
+    color: #fd911f;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/*========================  partenaires     ===========================*/
+
+.containeur-partenaire{
+    width: 100%;
+    padding: 2em 2em 2em 1em;
+}
+.containeur-partenaire .titre{
+    
+}
+.containeur-partenaire .titre h2{
+    width: 100%;
+    height: 30px;
+    color: white;
+    border-top-right-radius: 3em;
+    background-color:var(--themebase-color);
+    padding: 1em 1em 1em 1em;
+}
+
+
+.containeur-partenaire .partenaires{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1em 1em 1em;
+    border-top: 2px solid var(--themebase-color);
+
+}
+.containeur-partenaire .partenaires .contenue{
+    width: 25%;
+    height: 5em;
+    margin: 2em 2em 4em 4em;
+    flex-direction: column;
+}
+.containeur-partenaire .partenaires .contenue img{
+    width: 100%;
+    height: 100%;
+}
+.containeur-partenaire .partenaires .contenue p{
+    text-align: center;
+    color: rgb(107, 105, 105);
+    font-size: 1.2em;
+}
+
+/*===================   footer      ====================*/
+
+.pied{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1em 1em 3em;
+    background-color: var(--themebase-color);
+}
+.pied .liens{
+    width: 50%;
+}
+.pied .liens .liste{
+    list-style: none;
+    color: white;
+}
+
+.pied .liens .liste li {
+    margin: 10px 5px;
+}
+ 
+     
+ }
